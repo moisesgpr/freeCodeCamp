@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 id="title">Encuesta</h1>
+        <p id="description">Queremos saber tu opinion</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <div>
+                <label for="name" id="name-label">Nombre: <input type="text" id="name" placeholder="Nombre completo..." required></label>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Correo electronico..." required></label>
+            </div>
+            <div>
+                <label for="number" id="number-label">Edad: <input type="number" min="13" max="120" id="number" placeholder="Edad..." ></label>
+            </div>
+        </div>
+        <div>
+          <p>Recomendarias esta encuesta?</p>
+            <select name="" id="dropdown">
+                <option value="">(Selecciona una)</option>
+                <option value="1">Si</option>
+                <option value="2">No</option>
+            </select>
+        </div>
+                <div>
+            <p>Como nos encontraste?</p>
+            <label class="line"><input type="radio" value="1" name="how" class="inline"> Redes sociales</label>
+            <label class="line"><input type="radio" value="2" name="how" class="inline"> Amigos</label>
+        </div>
+                <div>
+            <p>Que animales te gustan?</p>
+            <label class="line"><input type="checkbox" value="1" class="inline"> Perros</label>
+            <label class="line"><input type="checkbox" value="2" class="inline"> Otros</label>
+        </div>
+                <div>
+            <p>Algun comentario o sugerencia?</p>
+            <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="..."></textarea>
+        </div>
+        <div>
+            <button id="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
