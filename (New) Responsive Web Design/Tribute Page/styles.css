@@ -1,0 +1,44 @@
+img {
+    display: block;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+#image {
+    max-width: 100%;
+}
+
+#img-div {
+    background-color: aliceblue;
+    padding: 50px;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+figcaption {
+    width: 100%;
+    background-color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(196, 196, 196);
+    font-size: 16px;
+}
+
+#tribute-info,
+main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    padding: 10px;
+}
