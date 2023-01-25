@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentacion HTML</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduccion">Introduccion</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#DOCTYPE">DOCTYPE</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Head">Head</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Body">Body</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Referencia">Referencia</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <p>HTML, siglas en inglés de HyperText Markup Language (lenguaje de marcado de hipertexto), hace
+                    referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de
+                    referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones,
+                    define una estructura básica y un código (denominado código HTML) para la definición de contenido de
+                    una página web, como texto, imágenes, videos, juegos, entre otros.</p>
+                <p>HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante
+                    etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de
+                    interpretar tanto por humanos como por máquinas.</p>
+                <div class="container">
+                    <code>&lt;html&gt;&lt;/html&gt;</code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="DOCTYPE">
+            <header>DOCTYPE</header>
+            <article>
+                <p>En el código fuente de los documentos y subpáginas HTML, la etiqueta DOCTYPE debe encontrarse al
+                    principio. Gracias a DOCTYPE se puede saber a primera vista de qué tipo de documento se trata. Si el
+                    documento no tiene la etiqueta se pueden producir errores de visualización en tu web.</p>
+                <p>Cualquiera que trabaje con documentos HTML ya conoce la etiqueta !DOCTYPE html. Aunque no es una de
+                    las etiquetas HTML clásicas, DOCTYPE html debe aparecer al principio de los documentos HTML, incluso
+                    antes del propio código fuente. DOCTYPE indica qué tipo de documento debe abrir el navegador y qué
+                    sintaxis y gramática utiliza su código fuente. A menudo la etiqueta se olvida, aunque esta sea uno
+                    de los elementos más importantes de un documento HTML. Dado que hoy en día su presencia se da por
+                    hecho, no debemos olvidar de indicar el tipo de documento de cada página con !DOCTYPE html. Los
+                    mejores editores de HTML ofrecen una comprobación de errores que nos indican las líneas DOCTYPE que
+                    faltan.</p>
+                <div class="container">
+                    <code>&lt;!DOCTYPE html&gt;</code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Head">
+            <header>Head</header>
+            <article>
+                <p>El elemento head de un documento HTML es la parte que no se muestra en el navegador cuando se carga
+                    la página. Contiene información como el título (title) de la página, enlaces al CSS (si quieres
+                    aplicar estilo a tu contenido HTML con CSS), enlaces para personalizar favicon, y otros metadatos
+                    (datos sobre el HTML, como quién lo escribió y palabras claves importantes que describen el
+                    documento).</p>
+                <p>La cabecera HTML es el contenido del elemento head — a diferencia del contenido del elemento body
+                    (que sí se muestra en la página cuando se carga en el navegador), el contenido de la cabecera no se
+                    muestra en la página.</p>
+                <ul>
+                    <li>
+                        <strong>Prerrequisitos:</strong> Estar familiarizado con el HTML básico, que se expone en
+                        [Empezar con el HTML](/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
+                    </li>
+                    <li>
+                        <strong>Objetivo:</strong> Aprender acerca de la cabecera HTML head, cuál es su propósito, los
+                        elementos más importantes que puede contener, y qué efecto puede tener sobre el documento HTML.
+                    </li>
+                </ul>
+                <div class="container">
+                    <code>&lt;head&gt;&lt;/head&gt;</code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Body">
+            <header>Body</header>
+            <article>
+                <p>El cuerpo de un documento HTML es la parte central de una página web, este se define por medio de la
+                    etiqueta BODY. En este artículo nos centraremos a hablar de esta etiqueta, sus atributos y
+                    propiedades.</p>
+                <p>De las dos partes en que se divide un documento HTML (HEAD y BODY), BODY es la segunda. BODY es la
+                    etiqueta usada para indicar el cuerpo de un documento HTML, es la parte donde se describe el
+                    contenido de la página (su estructura, su forma, sus colores, texto, y todo lo visual).</p>
+                <p>Dentro de la etiqueta body se pueden agregar atributos para indicar un color y/o imagen de fondo de
+                    la página, color del texto, color de los links, pero en HTML5 se ha desaprobado el uso de estos
+                    atributos y esto se tiene que indicar con CSS, este hecho no significa que no funcionen, de hecho se
+                    pueden usar y funciona pero siempre es recomendable ajustarse a los estándares, por cuestiones de
+                    compatibilidad y cosas por el estilo. Aquí les dejo la lista de los atributos que pueden ir dentro
+                    de la etiqueta body y que anteriormente eran muy usados, pero mi recomendación es aprender CSS y
+                    seguir los nuevos estándares de la W3C.</p>
+                <div class="container">
+                    <ul>
+
+
+                        <li>
+                            <strong>background</strong> - Para especificar una imagen de fondo.
+                        </li>
+
+                        <code>&lt;body background="imagen.jpg"&gt;</code>
+
+                        <li>
+                            <strong>bgcolor</strong> - Para especificar un color de fondo.
+                        </li>
+
+                        <code>&lt;body bgcolor="color"&gt;</code>
+
+                        <li>
+                            <strong>link</strong> Para especificar el color de los enlaces no visitados.
+                        </li>
+                        <code>&lt;body link="color"&gt;</code>
+                    </ul>
+                </div>
+                <code>&lt;body&gt;&lt;/body&gt;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <article>
+                <p>Puedes encontrar mas informacion acerca del <a href="https://es.wikipedia.org/wiki/HTML">HTML</a>, <a
+                        href="https://developer.mozilla.org/es/docs/Glossary/Doctype">DOCTYPE</a>, <a
+                        href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML">head</a>
+                    y <a
+                        href="https://acercadehtml.com/manual-html/etiqueta-body-cuerpo-de-una-pagina-html.html">body</a>
+                    en los siguientes enlaces compartidos.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
