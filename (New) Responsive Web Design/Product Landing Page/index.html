@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product Landing Page</title>
+</head>
+<header id="header">
+    <label><img id="header-img" src="https://i.ibb.co/X3m9R2W/img1.png" alt="PROgramador">proGRAMER
+    </label>
+    <nav id='nav-bar'>
+        <ul>
+            <li>
+                <a class="nav-link" href="#cursos">Cursos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#conocenos">Conocenos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#planes">Planes</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="separador"></div>
+
+<body>
+    <h1>Cursos de programacion basicos, intermedios y avanzados.</h1>
+    <section id="cursos">
+        <div class="cursos1">
+            <div class="icon"><i class="fa fa-users" style="font-size:50px"></i></div>
+            <div class="desc">
+                <h2>Diversidad</h2>
+                <p>De profesores para que puedas escoger el de tu preferencia.</p>
+            </div>
+        </div>
+        <div class="cursos1">
+            <div class="icon"><i class="fa fa-money" style="font-size:50px"></i></div>
+            <div class="desc">
+                <h2>Costos</h2>
+                <p>Excesivamente economicos, mucho mejores que la competencia.</p>
+            </div>
+        </div>
+        <div class="cursos1">
+            <div class="icon"><i class="fa fa-language" style="font-size:50px"></i></div>
+            <div class="desc">
+                <h2>Amplia</h2>
+                <p>cantidad de lenguajes de programacion dictado por los mejores profesionales.</p>
+            </div>
+        </div>
+    </section>
+    <section id='conocenos'>
+        <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/AEiRa5xZaZw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+    <section id="planes">
+        <form id='form' action='https://www.freecodecamp.com/email-submit'>
+            <article class="explotate">
+                <div class="account-type">
+                    <h3>Basico</h3>
+                    <p>En este plan estaremos incluyendo el aprendizaje desde 0 de HTML y CSS.</p>
+                    <label for="basico"><input id="basico-intermedio-avanzado" type="radio" name="account-type"
+                            required />Seleccionar</label>
+                </div>
+                <div class="account-type">
+                    <h3>Intermedio</h3>
+                    <p>En este plan estaremos incluyendo el aprendizaje desde 0 de HTML, CSS y JAVASCRIPT.</p>
+                    <label for="intermedio"><input id="basico-intermedio-avanzado" type="radio"
+                            name="account-type" />Seleccionar</label>
+                </div>
+                <div class="account-type">
+                    <h3>Avanzado</h3>
+                    <br>
+                    <p>En este plan estaremos incluyendo el aprendizaje desde 0 de HTML, CSS, JAVASCRIPT y un framework
+                        para aplicaciones web.</p>
+                    <br>
+                    <label for="avanzado"><input id="basico-intermedio-avanzado" type="radio"
+                            name="account-type" />Seleccionar</label>
+                </div>
+            </article>
+            <br>
+            <article class="explotate2">
+                <input id='email' placeholder='email...' type="email" name='email' form="form" required>
+                <input id='submit' type='submit' form="form">
+            </article>
+        </form>
+
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Terminos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <span>Copyright 2023, PROgramer</span>
+    </footer>
+</body>
+
+</html>
