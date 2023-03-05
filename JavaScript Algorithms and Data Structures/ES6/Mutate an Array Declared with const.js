@@ -6,6 +6,7 @@ function editInPlace() {
   s[2] = 7
   // Using s = [2, 5, 7] would be invalid
 
+  // test
   // Only change code above this line
 }
 editInPlace();
